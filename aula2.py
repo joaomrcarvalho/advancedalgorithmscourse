@@ -41,7 +41,7 @@ def D(a, b):
         return D(a, b//2)**2
     # odd
     else:
-        NMULTS+=2
+        NMULTS += 2
         return a * D(a, b//2)**2
 
 
