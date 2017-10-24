@@ -1,5 +1,5 @@
 from wrapping import memo
-
+from itertools import combinations
 
 NADDS = 0
 
@@ -24,6 +24,17 @@ def row_coin_recursive(n, coins):
         return coins[1]
 
     return max(coins[n] + row_coin_recursive(n-2, coins), row_coin_recursive(n-1, coins))
+
+
+# TODO
+def knapsack(elems, i, j):
+    if i == 0 or j == 0:
+        return 0
+
+    if j - w_i < 0:
+        return knapsack(elems, i-1, j)
+    else:
+        return max(...)
 
 
 def main_1():

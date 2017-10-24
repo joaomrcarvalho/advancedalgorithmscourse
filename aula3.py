@@ -59,13 +59,6 @@ def binomial_recursive(n, j):
     return binomial_recursive(n-1, j) + binomial_recursive(n-1, j-1)
 
 
-# TODO
-def binomial_dynamic(n):
-    lista = []
-    for j in range(n):
-        lista.append(1)
-
-
 def main():
     # numero = 10
     # lista = random.sample(range(20), 10)
